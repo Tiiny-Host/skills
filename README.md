@@ -20,6 +20,18 @@ A simple skill to deploy your HTML static app or share 100+ other file types (e.
 
 ## Installation
 
+### Claude Code
+
+```bash
+mkdir -p ~/.claude/skills/tiiny-host
+curl -sL https://raw.githubusercontent.com/tiinyhost/skills/main/skills/SKILL.md \
+  -o ~/.claude/skills/tiiny-host/SKILL.md
+```
+
+Then invoke it in Claude Code with `/tiiny-host` or let Claude auto-detect when you ask to publish or deploy something.
+
+### Other agents (agentskills.io)
+
 ```bash
 npx skills add tiiny-host/skills
 ```
