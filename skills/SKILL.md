@@ -11,9 +11,11 @@ allowed-tools: Bash
 
 # tiiny.host
 
-**Skill version: 1.1.0**
+**Skill version: 1.2.0**
 
 Publish any file or folder to the web and get a live URL back. Static hosting only.
+
+Full API reference: https://api-docs.tiiny.host/ — consult it for any endpoint, field, or behavior not documented here.
 
 ## Requirements
 
@@ -68,6 +70,22 @@ curl -sS -X PUT https://ext.tiiny.host/v1/upload \
 ```
 
 Updates require a saved API key and cannot be used without one.
+
+## Delete an existing site
+
+**Endpoint:** `DELETE https://ext.tiiny.host/v1/delete`<br>
+**Headers:** `x-api-key` (required)<br>
+**Body:** form-data with `domain` (the existing site's domain to delete).
+
+Example:
+
+```bash
+curl -sS -X DELETE https://ext.tiiny.host/v1/delete \
+  -H "x-api-key: YOUR_API_KEY" \
+  -F "domain=mysite.tiiny.site"
+```
+
+The response includes the user's remaining `data.links`, `data.quotaUsed`, and `data.quotaLimit` so you can confirm the deletion and report updated usage. Deletion is destructive — confirm the target `subdomain` with the user before calling this endpoint, and use `/profile` first if they are unsure which site to remove.
 
 ## List existing sites
 
