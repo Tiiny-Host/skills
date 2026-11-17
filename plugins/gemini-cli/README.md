@@ -22,6 +22,7 @@ The extension then shows in `gemini extensions list`. Before the first use, run 
 |---|---|
 | `gemini-extension.json` | The extension's name and the address of the Tiiny Host server: `https://mcp.tiiny.host/oauth` |
 | `skills/tiiny-host/SKILL.md` | Publishing instructions for Gemini |
+| `LICENSE` | MIT |
 
 ## How it is released
 

@@ -16,10 +16,11 @@ agy plugin install tiiny-host
 
 | File | Purpose |
 |---|---|
-| `plugin.json` | The plugin's name, description, logo, starter prompts and author |
+| `plugin.json` | The plugin's name, description, logo, starter prompts, author and license |
 | `mcp_config.json` | The address of the Tiiny Host server: `https://mcp.tiiny.host/oauth` |
 | `skills/tiiny-host/SKILL.md` | Publishing instructions for Antigravity |
 | `assets/logo.png` | The Tiiny Host icon shown in the Marketplace |
+| `LICENSE` | MIT |
 
 ## Network and credentials
 

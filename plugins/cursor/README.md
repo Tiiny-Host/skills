@@ -12,10 +12,11 @@ Once Cursor lists it: open the Cursor Marketplace, search "Tiiny Host" and insta
 
 | File | Purpose |
 |---|---|
-| `.cursor-plugin/plugin.json` | The plugin's name, description, author and logo |
+| `.cursor-plugin/plugin.json` | The plugin's name, description, author, license and logo |
 | `mcp.json` | The address of the Tiiny Host server: `https://mcp.tiiny.host/oauth` |
 | `skills/tiiny-host/SKILL.md` | Publishing instructions for Cursor's agent |
 | `assets/logo.png` | The Tiiny Host icon shown in the Marketplace |
+| `LICENSE` | MIT |
 
 `.cursor-plugin/marketplace.json` at the root of this repository points Cursor to this folder.
 

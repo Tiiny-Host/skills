@@ -12,9 +12,10 @@ Once xAI lists it: in Grok Build's plugin browser, search "Tiiny Host" and insta
 
 | File | Purpose |
 |---|---|
-| `.grok-plugin/plugin.json` | The plugin's name, description and author |
+| `.grok-plugin/plugin.json` | The plugin's name, description, author and license |
 | `.mcp.json` | The address of the Tiiny Host server: `https://mcp.tiiny.host/oauth` |
 | `skills/tiiny-host/SKILL.md` | Publishing instructions for Grok |
+| `LICENSE` | MIT |
 
 ## Network and credentials
 

@@ -17,5 +17,6 @@
   },
   "homepage": "https://tiiny.host",
   "repository": "https://github.com/Tiiny-Host/skills",
+  "license": "MIT",
   "keywords": ["tiiny host", "tiiny.host", "tiiny", "publish", "hosting"]
 }
