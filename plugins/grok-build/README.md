@@ -1,0 +1,44 @@
+# Tiiny Host plugin for Grok Build
+
+Adds Tiiny Host to Grok Build, xAI's coding agent for the terminal. It points Grok at the Tiiny Host MCP server to publish, list, update and delete the user's sites, and its skill tells Grok to ask before it publishes, replaces or deletes anything.
+
+**Not tested in Grok Build yet.** Signing in and publishing from Grok Build haven't been tried.
+
+## Install
+
+Once xAI lists it: in Grok Build's plugin browser, search "Tiiny Host" and install.
+
+## What it contains
+
+| File | Purpose |
+|---|---|
+| `.grok-plugin/plugin.json` | The plugin's name, description and author |
+| `.mcp.json` | The address of the Tiiny Host server: `https://mcp.tiiny.host/oauth` |
+| `skills/tiiny-host/SKILL.md` | How Grok should publish: confirm first, one site at a time |
+
+## Network and credentials
+
+The plugin runs no code and no hooks on the user's machine. It connects only to `https://mcp.tiiny.host/oauth`, with the user's own Tiiny Host sign-in. It asks for no keys and reads no files or environment variables.
+
+## How it gets listed
+
+xAI lists plugins through a pull request to its catalog, https://github.com/xai-org/plugin-marketplace, adding one entry to `.grok-plugin/marketplace.json`. The entry points at this folder of this repository at a fixed commit, so nothing is copied:
+
+```json
+{
+  "name": "tiiny-host",
+  "description": "Publish files as live websites on Tiiny Host, and list, update or delete your Tiiny Host sites.",
+  "category": "deployment",
+  "source": {
+    "source": "url",
+    "url": "https://github.com/Tiiny-Host/skills.git",
+    "sha": "<full 40-character commit SHA of this repository>",
+    "path": "plugins/grok-build"
+  },
+  "homepage": "https://tiiny.host",
+  "keywords": ["tiiny host", "tiiny.host", "tiiny"],
+  "domains": ["tiiny.host", "tiiny.site"]
+}
+```
+
+With `domains` set, Grok Build can suggest the plugin when the user mentions a tiiny.host or tiiny.site link. xAI's rules: https://github.com/xai-org/plugin-marketplace/blob/main/CONTRIBUTING.md

@@ -1,0 +1,10 @@
+{
+  "name": "tiiny-host",
+  "version": "1.0.0",
+  "description": "Publish files made with Gemini as live websites on Tiiny Host, and list, update or delete your Tiiny Host sites.",
+  "mcpServers": {
+    "tiiny-host": {
+      "httpUrl": "https://mcp.tiiny.host/oauth"
+    }
+  }
+}
