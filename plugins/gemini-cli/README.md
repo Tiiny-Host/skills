@@ -2,7 +2,7 @@
 
 Adds Tiiny Host to Gemini CLI, Google's coding agent for the terminal. It points Gemini at the Tiiny Host MCP server to publish, list, update and delete the user's sites.
 
-**Not tested in Gemini CLI yet.** The extension validates and installs from this folder (Gemini CLI 0.17.0, Nov 17, 2026); signing in and publishing from Gemini CLI haven't been tried.
+Tested in Gemini CLI 0.68.0 on Nov 17, 2026, installed from a clone of this repository: it signed in with a Tiiny Host account in the browser, published a page, listed the account's sites and deleted the page. Replacing a site and installing from GitHub haven't been tried yet.
 
 ## Install
 
@@ -12,7 +12,7 @@ Once this folder is released (see [How it is released](#how-it-is-released)):
 gemini extensions install https://github.com/Tiiny-Host/skills
 ```
 
-The extension then shows in `gemini extensions list`.
+The extension then shows in `gemini extensions list`. Before the first use, run `/mcp auth tiiny-host` in Gemini CLI and sign in with your Tiiny Host account in the browser. No API key is needed.
 
 ## What it contains
 
