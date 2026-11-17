@@ -1,16 +1,16 @@
 # Tiiny Host plugin for Claude Code
 
-Adds Tiiny Host to Claude Code. A developer can say "publish this build" or "put this page online" and get a live link on tiiny.site. Claude can also list their Tiiny Host sites, replace a site with a new version, or delete one. Claude asks before it publishes, replaces or deletes anything.
+Adds Tiiny Host to Claude Code. A developer can say "put this page online" and get a live link on tiiny.site, or ask Claude to delete one of their sites. The server also has tools to list sites and to replace a site with a new version.
 
 ## Install
 
-In Claude Code:
+In Claude Code, once this repository's main branch has the plugin:
 
 ```
 /plugin install tiiny-host --marketplace Tiiny-Host/skills
 ```
 
-The plugin then shows in `/plugin`, and its server in `/mcp`. The first time Claude uses Tiiny Host, the user signs in with their Tiiny Host account in the browser. No API key is needed.
+The plugin then shows in `/plugin`, and its server in `/mcp`. Before the first use, sign in there: select the Tiiny Host server, authenticate, and sign in with your Tiiny Host account in the browser. No API key is needed.
 
 The repository root holds `.claude-plugin/marketplace.json`, which lists this folder, so Claude Code installs it straight from this repository. The same folder can be submitted to Anthropic's plugin directory.
 
