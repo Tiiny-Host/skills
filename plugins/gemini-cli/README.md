@@ -2,7 +2,7 @@
 
 Adds Tiiny Host to Gemini CLI, Google's coding agent for the terminal. It points Gemini at the Tiiny Host MCP server to publish, list, update and delete the user's sites.
 
-Tested in Gemini CLI 0.68.0 on Nov 17, 2026, installed from a clone of this repository: it signed in with a Tiiny Host account in the browser, published a page, listed the account's sites and deleted the page. Replacing a site and installing from GitHub haven't been tried yet.
+Tested in Gemini CLI 0.68.0 on Nov 17, 2026, installed from a clone of this repository: it signed in with a Tiiny Host account in the browser, published a page, listed the account's sites and deleted the page. That run used the older `httpUrl` server field; with the current `url` field, installing, signing in and the list of four tools were rechecked. Replacing a site and installing from GitHub haven't been tried yet.
 
 ## Install
 
