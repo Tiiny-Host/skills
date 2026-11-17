@@ -6,6 +6,8 @@ Tested in Gemini CLI 0.68.0 on Nov 17, 2026, installed from a clone of this repo
 
 ## Install
 
+Needs Gemini CLI 0.36.0 or later: older versions can't connect to the Tiiny Host server. We tested only 0.68.0; the 0.36.0 floor comes from Gemini CLI's npm packages.
+
 Once this folder is released (see [How it is released](#how-it-is-released)):
 
 ```bash
