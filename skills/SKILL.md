@@ -6,12 +6,12 @@ description: >
   "put this online". Outputs a live URL at {subdomain}.tiiny.site.
 user-invocable: true
 argument-hint: "[file-or-folder]"
-allowed-tools: Bash
+allowed-tools: Bash(curl *)
 ---
 
 # tiiny.host
 
-**Skill version: 1.2.0**
+**Skill version: 1.2.2**
 
 Publish any file or folder to the web and get a live URL back. Static hosting only.
 
@@ -117,6 +117,10 @@ When calling the APIs, read the API key from these sources (first match wins):
 
 1. `$TIINYHOST_API_KEY` environment variable
 
+Never show the API key in the chat: do not print, quote or repeat it in your replies, not even partly. Call it "your API key" and pass it only in the `x-api-key` header or to the storage the user chose.
+
+Never print or save the `/delete` and `/profile` responses whole: show and keep only the fields you need, such as `success`, `data.links`, `data.quotaUsed` and `data.quotaLimit`.
+
 After obtaining an API key via OTP, do not silently discard it. Ask the user whether they want to store it in their usual location for API keys so future Tiiny operations do not require another OTP flow.
 
 Preferred behavior:
@@ -141,17 +145,17 @@ curl -sS -X POST https://ext.tiiny.host/v1/otp/request \
   -H "x-email: user@example.org"
 ```
 
-3. Tell the user: "Check your inbox for a sign-in code from Tiiny Host and paste it here."
+3. Tell the user: "Check your inbox for a 4-digit sign-in code from Tiiny Host and paste it here."
 4. Verify the code and get the API key (POST):
 
 ```bash
 curl -sS -X POST https://ext.tiiny.host/v1/otp/verify \
   -H "x-email: user@example.org" \
   -H "content-type: application/json" \
-  -d '{"otp":"123456"}'
+  -d '{"otp":"1234"}'
 ```
 
-5. Ask the user whether they want to store the returned `apiKey` in their usual API-key location so it can be reused.
+5. Ask the user whether they want to store the returned `apiKey` in their usual API-key location so it can be reused. Do not show the key itself in the chat.
 6. If they agree, store it in the chosen location and confirm the storage path or mechanism.
 
 
