@@ -20,7 +20,7 @@ The repository root holds `.claude-plugin/marketplace.json`, which lists this fo
 |---|---|
 | `.claude-plugin/plugin.json` | The plugin's name, description, author and icon |
 | `.mcp.json` | The address of the Tiiny Host server: `https://mcp.tiiny.host/oauth` |
-| `skills/tiiny-host/SKILL.md` | How Claude should publish: confirm first, one site at a time |
+| `skills/tiiny-host/SKILL.md` | Publishing instructions for Claude |
 | `assets/logo.png` | The Tiiny Host icon shown in the plugin directory |
 
 ## What it sends where

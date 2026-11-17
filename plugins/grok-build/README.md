@@ -1,6 +1,6 @@
 # Tiiny Host plugin for Grok Build
 
-Adds Tiiny Host to Grok Build, xAI's coding agent for the terminal. It points Grok at the Tiiny Host MCP server to publish, list, update and delete the user's sites, and its skill tells Grok to ask before it publishes, replaces or deletes anything.
+Adds Tiiny Host to Grok Build, xAI's coding agent for the terminal. It points Grok at the Tiiny Host MCP server to publish, list, update and delete the user's sites.
 
 **Not tested in Grok Build yet.** Signing in and publishing from Grok Build haven't been tried.
 
@@ -14,7 +14,7 @@ Once xAI lists it: in Grok Build's plugin browser, search "Tiiny Host" and insta
 |---|---|
 | `.grok-plugin/plugin.json` | The plugin's name, description and author |
 | `.mcp.json` | The address of the Tiiny Host server: `https://mcp.tiiny.host/oauth` |
-| `skills/tiiny-host/SKILL.md` | How Grok should publish: confirm first, one site at a time |
+| `skills/tiiny-host/SKILL.md` | Publishing instructions for Grok |
 
 ## Network and credentials
 

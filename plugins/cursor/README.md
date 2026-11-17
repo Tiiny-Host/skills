@@ -1,6 +1,6 @@
 # Tiiny Host plugin for Cursor
 
-Adds Tiiny Host to Cursor, the AI code editor. It points Cursor's agent at the Tiiny Host MCP server to publish, list, update and delete the user's sites, and its skill tells the agent to ask before it publishes, replaces or deletes anything.
+Adds Tiiny Host to Cursor, the AI code editor. It points Cursor's agent at the Tiiny Host MCP server to publish, list, update and delete the user's sites.
 
 **Not tested in Cursor yet.** The plugin loads in Cursor with its skill (Nov 10, 2026); signing in and publishing from Cursor haven't been tried.
 
@@ -14,7 +14,7 @@ Once Cursor lists it: open the Cursor Marketplace, search "Tiiny Host" and insta
 |---|---|
 | `.cursor-plugin/plugin.json` | The plugin's name, description, author and logo |
 | `mcp.json` | The address of the Tiiny Host server: `https://mcp.tiiny.host/oauth` |
-| `skills/tiiny-host/SKILL.md` | How the agent should publish: confirm first, one site at a time |
+| `skills/tiiny-host/SKILL.md` | Publishing instructions for Cursor's agent |
 | `assets/logo.png` | The Tiiny Host icon shown in the Marketplace |
 
 `.cursor-plugin/marketplace.json` at the root of this repository points Cursor to this folder.
