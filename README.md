@@ -13,7 +13,7 @@ Tiiny Host turns anything an AI agent makes - an HTML page, a PDF, an image, a Z
 | [skills/](skills/) | The publish skill, for agents that read Agent Skills | [Install the skill](#install-the-skill) |
 | [plugins/claude-code/](plugins/claude-code/) | Plugin for Claude Code | `claude plugin install tiiny-host --marketplace Tiiny-Host/skills` |
 | [plugins/grok-build/](plugins/grok-build/) | Plugin for Grok Build | `grok plugin install 'Tiiny-Host/skills#plugins/grok-build' --trust` |
-| [plugins/gemini-cli/](plugins/gemini-cli/) | Extension for Gemini CLI | [From a clone of this repository](plugins/gemini-cli/#install) |
+| [plugins/gemini-cli/](plugins/gemini-cli/) | Extension for Gemini CLI | `gemini extensions install https://github.com/Tiiny-Host/skills` |
 | [plugins/antigravity/](plugins/antigravity/) | Plugin for the Antigravity CLI | [From a clone of this repository](plugins/antigravity/#install) |
 | [plugins/cursor/](plugins/cursor/) | Plugin for the Cursor CLI | [Loaded from a clone of this repository](plugins/cursor/#install) |
 

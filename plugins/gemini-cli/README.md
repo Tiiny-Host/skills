@@ -4,14 +4,11 @@ Adds Tiiny Host to Gemini CLI, Google's open-source coding agent for the termina
 
 ## Install
 
-From a clone of this repository:
-
 ```bash
-git clone https://github.com/Tiiny-Host/skills.git
-gemini extensions install ./skills/plugins/gemini-cli
+gemini extensions install https://github.com/Tiiny-Host/skills
 ```
 
-The extension then shows in `gemini extensions list`.
+Gemini CLI installs the extension from this repository's GitHub release. It shows the Tiiny Host MCP server the extension adds and asks you to confirm; if the folder you run it in isn't trusted yet, it may first ask whether to trust it. The extension then shows in `gemini extensions list`.
 
 ## Sign in
 
