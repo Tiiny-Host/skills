@@ -17,7 +17,7 @@ Tiiny Host turns anything an AI agent makes - an HTML page, a PDF, an image, a Z
 | [plugins/antigravity/](plugins/antigravity/) | Plugin for the Antigravity CLI | [From a clone of this repository](plugins/antigravity/#install) |
 | [plugins/cursor/](plugins/cursor/) | Plugin for the Cursor CLI | [Loaded from a clone of this repository](plugins/cursor/#install) |
 
-The plugins connect the agent to the Tiiny Host MCP server at `https://mcp.tiiny.host/oauth`: you sign in with your Tiiny Host account in the browser, and no API key is needed. The skill calls the Tiiny Host API with curl and uses your Tiiny Host API key. In Claude Code you can use either one. Each plugin folder has its own README.
+The plugins connect the agent to the Tiiny Host MCP server at `https://mcp.tiiny.host/oauth`: you sign in with your Tiiny Host account in the browser, and no API key is needed. The skill calls the Tiiny Host API with curl. With just an email that has no Tiiny Host account yet, it publishes a site that stays live for one hour; for permanent sites, it signs you in with a code sent to your email and uses your Tiiny Host API key. In Claude Code you can use either one. Each plugin folder has its own README.
 
 `.claude-plugin/marketplace.json` makes this repository a plugin marketplace for Claude Code: that is how the install command above finds the plugin.
 

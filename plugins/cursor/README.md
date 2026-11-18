@@ -15,7 +15,7 @@ agent --plugin-dir ./skills/plugins/cursor
 
 ## Sign in
 
-Before the first use, open `/mcp` in the agent, select the Tiiny Host server and sign in with your Tiiny Host account in the browser. No API key is needed.
+Before the first use, open `/mcp` in the agent, select the Tiiny Host server and choose Login. The agent shows a sign-in link: open it in the browser and sign in with your Tiiny Host account. No API key is needed.
 
 ## Use
 
