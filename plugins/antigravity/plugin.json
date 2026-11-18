@@ -1,0 +1,22 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "tiiny-host",
+  "displayName": "Tiiny Host",
+  "version": "1.0.0",
+  "description": "Publish files made with Antigravity as live websites on Tiiny Host with a shareable link, and list, update or delete your Tiiny Host sites.",
+  "logo": "assets/logo.png",
+  "suggestedPrompts": [
+    "Publish this page on Tiiny Host and give me the link",
+    "List my Tiiny Host sites",
+    "Update my Tiiny Host site with the latest version of this file"
+  ],
+  "author": {
+    "name": "Tiiny Labs Limited",
+    "email": "support@tiiny.host",
+    "url": "https://tiiny.host"
+  },
+  "homepage": "https://tiiny.host",
+  "repository": "https://github.com/Tiiny-Host/skills",
+  "license": "MIT",
+  "keywords": ["tiiny host", "tiiny.host", "tiiny", "publish", "hosting"]
+}

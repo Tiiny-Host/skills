@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tiiny-host": {
+      "type": "http",
+      "url": "https://mcp.tiiny.host/oauth"
+    }
+  }
+}

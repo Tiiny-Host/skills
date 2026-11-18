@@ -1,0 +1,14 @@
+{
+  "name": "tiiny-host",
+  "version": "1.0.0",
+  "description": "Publish files made with Cursor as live websites on Tiiny Host, and list, update or delete your Tiiny Host sites.",
+  "author": {
+    "name": "Tiiny Labs Limited",
+    "email": "support@tiiny.host"
+  },
+  "homepage": "https://tiiny.host",
+  "repository": "https://github.com/Tiiny-Host/skills",
+  "license": "MIT",
+  "keywords": ["tiiny host", "tiiny.host", "tiiny", "publish", "hosting"],
+  "logo": "assets/logo.png"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "tiiny-host",
+  "description": "Tiiny Host plugins for Claude Code",
+  "owner": {
+    "name": "Tiiny Labs Limited",
+    "email": "support@tiiny.host",
+    "url": "https://tiiny.host"
+  },
+  "plugins": [
+    {
+      "name": "tiiny-host",
+      "source": "./plugins/claude-code",
+      "description": "Publish files made with Claude as live websites on Tiiny Host, and list, update or delete your Tiiny Host sites.",
+      "category": "deployment",
+      "homepage": "https://tiiny.host"
+    }
+  ]
+}

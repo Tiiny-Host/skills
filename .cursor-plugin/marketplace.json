@@ -1,0 +1,19 @@
+{
+  "name": "tiiny-host",
+  "owner": {
+    "name": "Tiiny Labs Limited",
+    "email": "support@tiiny.host"
+  },
+  "metadata": {
+    "description": "Tiiny Host plugins for Cursor"
+  },
+  "plugins": [
+    {
+      "name": "tiiny-host",
+      "source": "plugins/cursor",
+      "description": "Publish files made with Cursor as live websites on Tiiny Host, and list, update or delete your Tiiny Host sites.",
+      "category": "deployment",
+      "homepage": "https://tiiny.host"
+    }
+  ]
+}

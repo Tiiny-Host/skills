@@ -1,0 +1,13 @@
+{
+  "name": "tiiny-host",
+  "version": "1.0.0",
+  "description": "Publish files made with Grok as live websites on Tiiny Host, and list, update or delete your Tiiny Host sites.",
+  "author": {
+    "name": "Tiiny Labs Limited",
+    "email": "support@tiiny.host",
+    "url": "https://tiiny.host"
+  },
+  "homepage": "https://tiiny.host",
+  "license": "MIT",
+  "keywords": ["tiiny host", "tiiny.host", "tiiny"]
+}
