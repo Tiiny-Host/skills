@@ -33,7 +33,7 @@ Ask in plain words, for example:
 
 ## Network and credentials
 
-The plugin runs no code and no hooks on your machine. Claude connects only to `https://mcp.tiiny.host/oauth`, signed in as you, and can only reach sites owned by your Tiiny Host account. Files you ask to publish become public websites on tiiny.site; each publish sends one file of up to 15 MB. The plugin asks for no keys.
+The plugin contains no scripts, executables or hooks. Claude connects to `https://mcp.tiiny.host/oauth`, the Tiiny Host MCP server, signed in as you, and can only reach sites owned by your Tiiny Host account. To sign you in, Claude also connects to `https://api.tiiny.host`, the sign-in server that the MCP server names: there it registers as a client and gets its access token, while you sign in and allow access on tiiny.host in your browser. Files you ask to publish become public websites on tiiny.site; each publish sends one file of up to 15 MB. The plugin asks for no keys.
 
 Privacy policy: https://tiiny.host/privacypolicy.html
 Support: support@tiiny.host
