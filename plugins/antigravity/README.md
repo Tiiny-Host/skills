@@ -2,7 +2,7 @@
 
 Adds Tiiny Host to Antigravity, Google's coding agent: the Antigravity CLI, which replaces Gemini CLI for most users, and the Antigravity app and IDE. It points Antigravity at the Tiiny Host MCP server to publish, list, update and delete the user's sites.
 
-**Not tested in Antigravity yet.** The folder passes `agy plugin validate --strict`; signing in and publishing from Antigravity haven't been tried.
+Tested in the Antigravity CLI 1.5.10 on Nov 18, 2026, installed with `agy plugin install` from a copy of this folder: it signed in with a Tiiny Host account in the browser, published a page and deleted it. The folder passes `agy plugin validate --strict`. The Antigravity app and IDE haven't been tried.
 
 ## Install
 

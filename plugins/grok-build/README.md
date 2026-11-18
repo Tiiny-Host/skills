@@ -2,7 +2,7 @@
 
 Adds Tiiny Host to Grok Build, xAI's coding agent for the terminal. It points Grok at the Tiiny Host MCP server to publish, list, update and delete the user's sites.
 
-**Not tested in Grok Build yet.** Signing in and publishing from Grok Build haven't been tried.
+Tested in Grok Build 1.0.88 on Nov 18, 2026, on a free xAI account, installed with `grok plugin install` from a copy of this folder: it signed in with a Tiiny Host account in the browser, published a page and deleted it.
 
 ## Install
 

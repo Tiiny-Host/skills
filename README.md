@@ -13,11 +13,11 @@ Tiiny Host turns anything an AI agent makes - an HTML page, a PDF, an image, a Z
 | [skills/](skills/) | The publish skill: any agent that reads Agent Skills can publish, update, list and delete sites through the Tiiny Host API | [Install the skill](#install-the-skill) |
 | [plugins/claude-code/](plugins/claude-code/) | Plugin for Claude Code | `/plugin install tiiny-host --marketplace Tiiny-Host/skills`, once the plugin is on main |
 | [plugins/gemini-cli/](plugins/gemini-cli/) | Extension for Gemini CLI | `gemini extensions install https://github.com/Tiiny-Host/skills`, once the folder is released ([how](plugins/gemini-cli/#how-it-is-released)) |
-| [plugins/grok-build/](plugins/grok-build/) | Plugin for Grok Build, not tested in Grok Build yet | Once listed: from xAI's plugin catalog |
-| [plugins/cursor/](plugins/cursor/) | Plugin for Cursor, not tested in Cursor yet | Once listed: from the Cursor Marketplace |
-| [plugins/antigravity/](plugins/antigravity/) | Plugin for Antigravity, Google's agent that replaces Gemini CLI; not tested in Antigravity yet | Once listed: from Google's Antigravity Marketplace, `agy plugin install tiiny-host` |
+| [plugins/grok-build/](plugins/grok-build/) | Plugin for Grok Build | Once listed: from xAI's plugin catalog |
+| [plugins/cursor/](plugins/cursor/) | Plugin for Cursor | Once listed: from the Cursor Marketplace |
+| [plugins/antigravity/](plugins/antigravity/) | Plugin for Antigravity, Google's agent that replaces Gemini CLI | Once listed: from Google's Antigravity Marketplace, `agy plugin install tiiny-host` |
 
-The skill and the plugins work differently. The skill calls the Tiiny Host API with curl: a first-time user publishes with just an email, and an API key makes their sites permanent. The plugins connect the agent to the Tiiny Host MCP server, where the user signs in with their Tiiny Host account in the browser; so far this is tested in Claude Code and Gemini CLI. Each plugin folder has its own README.
+The skill and the plugins work differently. The skill calls the Tiiny Host API with curl: a first-time user publishes with just an email, and an API key makes their sites permanent. The plugins connect the agent to the Tiiny Host MCP server, where the user signs in with their Tiiny Host account in the browser; this is tested in Claude Code, Gemini CLI, Grok Build and the Cursor and Antigravity CLIs. Each plugin folder has its own README.
 
 `.claude-plugin/marketplace.json` lists the Claude Code plugin, so Claude Code installs it straight from this repository (tested from a clone). `.cursor-plugin/marketplace.json` points Cursor to its plugin the same way.
 
