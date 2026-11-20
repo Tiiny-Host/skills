@@ -36,7 +36,7 @@ Add the server to any MCP client that supports remote servers with OAuth. In VS 
 }
 ```
 
-On first use, the client opens the Tiiny Host sign-in page in your browser. Sign in with your Tiiny Host account, free or paid, and approve access. The client registers itself, so there is no API key, client ID or secret to enter. Setup for Claude, Claude Code, Codex, Cursor, Windsurf, Zed and other clients: [MCP Connection Guide](https://api-docs.tiiny.host/connection-guide-2259947m0).
+On first use, the client opens the Tiiny Host sign-in page in your browser. Sign in with your Tiiny Host account, free or paid, and approve access. The client registers itself, so there is no API key, client ID or secret to enter. Endpoints, tools and limits: [MCP connection guide](https://tiiny.host/docs/guides/mcp/).
 
 ### How to use it
 
@@ -67,7 +67,7 @@ The plugins connect the agent to the Tiiny Host MCP server at `https://mcp.tiiny
 ## Other ways to use Tiiny Host with AI
 
 - **MCP server with email sign-in** at `https://mcp.tiiny.host`, for clients without OAuth: the user signs in with a code sent to their email, through the tools `request_otp` and `verify_otp`, and gets the same four tools.
-- **API**: [api-docs.tiiny.host](https://api-docs.tiiny.host) - upload, update, delete and list sites. The skill uses it.
+- **API**: [tiiny.host/docs](https://tiiny.host/docs/) - upload, update, delete and list sites. The skill uses it.
 - **Chrome extensions**: [Tiiny Labs Limited in the Chrome Web Store](https://chromewebstore.google.com/publisher/tiiny-labs-limited/u1f4450f98f72da9912e9bce021b88055).
 
 ## What are Agent Skills?
